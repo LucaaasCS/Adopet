@@ -13,5 +13,8 @@
   },
   "allowScripts": {
     "cypress@13.17.0": true
+  },
+  "devDependencies": {
+    "mochawesome": "^8.0.1"
   }
 }
