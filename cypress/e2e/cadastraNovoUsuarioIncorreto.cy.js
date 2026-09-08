@@ -1,10 +1,7 @@
-describe('Teste de cadastro de novo usuário', () => {
-  it('Cadastro de novo usuário na plataforma', () => {
-    cy.visit('https://adopet-frontend-cypress.vercel.app');
-    cy.get('[data-test="register-button"]').click();
-    cy.get('[data-test="submit-button"]').type('Lucas');
-    cy.get('[data-test="input-email"]').type('lucas@example.com');
-    cy.contains('Crie uma senha').should('be.visible');
-    cy.contains('Repita a senha criada').should('be.visible');
-  })
-})
+describe('Teste de cadastro de novo usuário com senha inválida', () => {
+  it('deve barrar o cadastro quando a senha não atende aos critérios', () => {
+    cy.preencherCadastroInvalido('Lucas', 'lucas@example.com', '12345', '12346');
+
+    cy.contains('A senha deve conter pelo menos uma letra maiúscula, um número e ter entre 6 e 15 caracteres').should('be.visible');
+  });
+});

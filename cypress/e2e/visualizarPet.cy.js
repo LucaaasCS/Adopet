@@ -1,7 +1,6 @@
-describe('Acessa a página inicial e verific', () => {
-  it('passes', () => {
-    cy.visit('https://adopet-frontend-cypress.vercel.app');
-    cy.contains('a', 'Ver pets disponíveis para adoção').click();
-
-  })
-})
+describe('Acessa a página inicial e verifica os pets disponíveis', () => {
+  it('deve abrir a lista de pets disponíveis para adoção', () => {
+    cy.visitarHome();
+    cy.verPetsDisponiveis();
+  });
+});
