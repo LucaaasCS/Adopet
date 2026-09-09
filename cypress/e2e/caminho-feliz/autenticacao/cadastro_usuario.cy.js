@@ -1,5 +1,5 @@
 describe('Cadastro com usuários válidos', () => {
-  const usuariosValidos = require('../fixtures/usuariosValidos.json');
+  const usuariosValidos = require('../../../fixtures/usuariosValidos.json');
 
   const stubFetchStatus = (statusCode, body = {}) => {
     cy.window().then((win) => {
