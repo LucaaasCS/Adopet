@@ -6,3 +6,5 @@ node_modules/
 *.wolff
 cypress/videos/
 cypress/screenshots/
+cypress/results/
+Adopet/
