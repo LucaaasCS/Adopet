@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Email Inválido 1",
+    "email": "email-invalido-sem-arroba",
+    "password": "Senha@Valida01",
+    "confirmPassword": "Senha@Valida01"
+  },
+  {
+    "name": "Email Inválido 2",
+    "email": "usuario@",
+    "password": "Senha@Valida02",
+    "confirmPassword": "Senha@Valida02"
+  },
+  {
+    "name": "Email Inválido 3",
+    "email": "usuario.com",
+    "password": "Senha@Valida03",
+    "confirmPassword": "Senha@Valida03"
+  }
+]

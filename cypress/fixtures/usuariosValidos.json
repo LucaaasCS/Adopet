@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Ana Silva",
+    "email": "ana.silva1@example.com",
+    "password": "Senha@Ana01",
+    "confirmPassword": "Senha@Ana01"
+  },
+  {
+    "name": "Bruno Costa",
+    "email": "bruno.costa2@example.com",
+    "password": "Senha@Bruno02",
+    "confirmPassword": "Senha@Bruno02"
+  },
+  {
+    "name": "Carla Mendes",
+    "email": "carla.mendes3@example.com",
+    "password": "Senha@Carla03",
+    "confirmPassword": "Senha@Carla03"
+  },
+  {
+    "name": "Diego Rocha",
+    "email": "diego.rocha4@example.com",
+    "password": "Senha@Diego04",
+    "confirmPassword": "Senha@Diego04"
+  },
+  {
+    "name": "Eduarda Lima",
+    "email": "eduarda.lima5@example.com",
+    "password": "Senha@Eduarda05",
+    "confirmPassword": "Senha@Eduarda05"
+  },
+  {
+    "name": "Felipe Souza",
+    "email": "felipe.souza6@example.com",
+    "password": "Senha@Felipe06",
+    "confirmPassword": "Senha@Felipe06"
+  },
+  {
+    "name": "Gabriela Nunes",
+    "email": "gabriela.nunes7@example.com",
+    "password": "Senha@Gabriela07",
+    "confirmPassword": "Senha@Gabriela07"
+  },
+  {
+    "name": "Henrique Alves",
+    "email": "henrique.alves8@example.com",
+    "password": "Senha@Henrique08",
+    "confirmPassword": "Senha@Henrique08"
+  },
+  {
+    "name": "Isabela Ferreira",
+    "email": "isabela.ferreira9@example.com",
+    "password": "Senha@Isabela09",
+    "confirmPassword": "Senha@Isabela09"
+  },
+  {
+    "name": "João Pereira",
+    "email": "joao.pereira10@example.com",
+    "password": "Senha@Joao10",
+    "confirmPassword": "Senha@Joao10"
+  }
+]

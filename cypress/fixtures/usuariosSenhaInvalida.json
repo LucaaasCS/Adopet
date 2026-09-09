@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Lucas Mendes",
+    "email": "lucas.mendes@example.com",
+    "password": "Senha@123",
+    "confirmPassword": "Senha@456"
+  },
+  {
+    "name": "Patricia Lima",
+    "email": "patricia.lima@example.com",
+    "password": "Abc123",
+    "confirmPassword": "Abc456"
+  },
+  {
+    "name": "Rafael Nogueira",
+    "email": "rafael.nogueira@example.com",
+    "password": "SenhaSecreta",
+    "confirmPassword": "SenhaDiferente"
+  }
+]
