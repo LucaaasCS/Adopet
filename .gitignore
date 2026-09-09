@@ -2,5 +2,7 @@ node_modules/
 /.env
 /logs/
 *.tmp
+*.mp4
+*.wolff
 cypress/videos/
 cypress/screenshots/
