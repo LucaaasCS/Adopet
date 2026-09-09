@@ -1,6 +1,6 @@
 describe('Cadastro com rejeição e bloqueio', () => {
-  const usuariosSenhaInvalida = require('../fixtures/usuariosSenhaInvalida.json');
-  const usuariosEmailInvalido = require('../fixtures/usuariosEmailInvalido.json');
+  const usuariosSenhaInvalida = require('../../../fixtures/usuariosSenhaInvalida.json');
+  const usuariosEmailInvalido = require('../../../fixtures/usuariosEmailInvalido.json');
 
   const stubFetchStatus = (statusCode, body = {}) => {
     cy.window().then((win) => {
