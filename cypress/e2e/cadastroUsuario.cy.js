@@ -1,5 +1,5 @@
-describe('Cadastro', () => {
-  const usuarios = require('../fixtures/usuariosCadastro.json');
+describe('Cadastro com usuários válidos', () => {
+  const usuariosValidos = require('../fixtures/usuariosValidos.json');
 
   const stubFetchStatus = (statusCode, body = {}) => {
     cy.window().then((win) => {
@@ -36,8 +36,8 @@ describe('Cadastro', () => {
     cy.getByStableSelector('emailInputCadastro').should('be.visible');
   });
 
-  it('deve cadastrar múltiplos usuários com sucesso e retornar status 201 para cada um', () => {
-    usuarios.forEach((usuario) => {
+  it('deve cadastrar múltiplos usuários válidos com sucesso e retornar status 201 para cada um', () => {
+    usuariosValidos.forEach((usuario) => {
       cy.abrirCadastro();
       stubFetchStatus(201, { id: 101, name: usuario.name, email: usuario.email });
 
@@ -46,22 +46,5 @@ describe('Cadastro', () => {
 
       assertFetchStatus(201, { email: usuario.email });
     });
-  });
-
-  it('deve rejeitar cadastro com senhas divergentes e retornar status 400', () => {
-    stubFetchStatus(400, { message: 'As senhas não conferem' });
-
-    cy.preencherFormularioCadastro('Lucas', 'lucas@example.com', 'Secret123!', 'Secret1234!');
-    cy.getByStableSelector('submitButton').click();
-
-    assertFetchStatus(400, { message: 'As senhas não conferem' });
-  });
-
-  it('deve bloquear cadastro com e-mail inválido', () => {
-    cy.getByStableSelector('emailInputCadastro').clear().type('email-invalido');
-    cy.getByStableSelector('passwordInputCadastro').clear().type('Secret123!');
-    cy.getByStableSelector('confirmPasswordInput').clear().type('Secret123!');
-
-    cy.getByStableSelector('emailInputCadastro').invoke('prop', 'validity').its('typeMismatch').should('eq', true);
   });
 });
